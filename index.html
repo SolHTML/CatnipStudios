@@ -68,7 +68,7 @@
 
         window.addEventListener('scroll', function() {
             const header = document.querySelector('.header');
-            const sectionOneHeight = document.querySelector('#one').offsetHeight;
+            const sectionOneHeight = document.querySelector('#one').offsetHeight - 500;
 
             if (window.scrollY > sectionOneHeight) {
                 header.classList.add('minimized');
