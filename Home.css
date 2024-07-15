@@ -269,6 +269,7 @@ section {
     display: flex;
     justify-content: center;
     text-align: center;
+    margin-top: 50px;
     color: white;
     right: 700px;
     font-size: 50px;
