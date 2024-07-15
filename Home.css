@@ -246,24 +246,37 @@ section {
     font-size: clamp(1.125rem, 2vw, 1.25rem);
     background-image: linear-gradient(180deg,#030410, #080b2a);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    height: 140vh;
+    height: 130vh;
 }
 
 #two h1 {
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 25%;
     color: rgb(226, 226, 226);
     text-shadow: 1px 1px 4px #000000;
     font-size: 200px;
     animation: texthingy 3s ease forwards;
     animation-timeline: view();
     animation-duration: 1s;
-    margin-bottom: 600px;
+    margin-bottom: 550px;
 }
 
 #two p {
-    animation: texthingy 3s ease forwards;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    right: 700px;
+    font-size: 50px;
+    animation: texthingy1 1s ease forwards;
     animation-timeline: view();
     animation-duration: 1s;
 }
+
 
 @keyframes texthingy {
     from {
@@ -272,7 +285,25 @@ section {
     to {
         opacity: 1;
     }
-    60% {
+    50% {
+        opacity: 0;
+        transform: translate();
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translate();
+    }
+}
+
+@keyframes texthingy1 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    35% {
         opacity: 0;
         transform: translate();
     }
