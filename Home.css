@@ -363,7 +363,13 @@ section {
     background-position: center;
 }
 
-#four h1 {
+#four .contact {
+    width: 50vw;
+    height: 49vh;
+    margin-bottom: 200px;
+}
+
+#four .contact h1 {
     margin: auto;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -426,4 +432,45 @@ section {
     cursor: pointer;
 }
 
+#four .DownloadSection {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50vw;
+    height: 49vh;
+}
+
+#four a {
+    opacity: 1;
+    display: block;
+    background: rgb(20, 163, 20);
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    width: 320px;
+    height: 150px;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 50px;
+    font-weight: 400;
+    font: bold;
+
+}
+
+
+#four a:hover {
+    opacity: 0.5;
+}
+
+#four .DownloadSection h1 {
+    position: relative;
+    bottom: 60px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 60px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+}
 
