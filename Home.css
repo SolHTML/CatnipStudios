@@ -321,7 +321,7 @@ section {
     overflow: hidden;
     height: 130vh;
     filter: grayscale(0%);
-    transition: filter 0.5s ease;
+    transition: filter 1s ease-in-out;
 }
 
 #three.grayscale {
@@ -341,7 +341,7 @@ section {
     margin-bottom: 800px;
     margin-left: 42%;
     opacity: 0;
-    transition: opcity 0.5s ease-in-out;
+    transition: opcity 5s ease-in;
 }
 
 #three h2{
@@ -356,7 +356,7 @@ section {
     margin-bottom: 500px;
     right: 875px;
     opacity: 0;
-    transition: opcity 0.5s ease-in-out;
+    transition: opcity 5s ease-in;
 }
 
 #three.grayscale-removed h1,
