@@ -6,7 +6,6 @@
     -webkit-user-select: none;
 }
 
-
 .banner {
     width: 100vw;
     height: 99.95vh;
@@ -98,7 +97,6 @@
     width: 100%;
     transform: translateX(-50%) scaleX(1);
 }
-
 
 .websitesp {
     text-align: center;
@@ -240,7 +238,6 @@ section {
 }
 
 #one {
-    
     font-family: sans-serif;
     user-select: none;
     -webkit-user-select: none;
@@ -282,7 +279,6 @@ section {
     animation-duration: 1s;
 }
 
-
 @keyframes texthingy {
     from {
         opacity: 0;
@@ -294,7 +290,6 @@ section {
         opacity: 0;
         transform: translate();
     }
-    
     100% {
         opacity: 1;
         transform: translate();
@@ -312,7 +307,6 @@ section {
         opacity: 0;
         transform: translate();
     }
-    
     100% {
         opacity: 1;
         transform: translate();
@@ -326,6 +320,12 @@ section {
     background-attachment: fixed;
     overflow: hidden;
     height: 130vh;
+    filter: grayscale(0%);
+    transition: filter 0.5s ease;
+}
+
+#three.grayscale {
+    filter: grayscale(100%);
 }
 
 #three h1 {
@@ -340,6 +340,8 @@ section {
     top:20px;
     margin-bottom: 800px;
     margin-left: 42%;
+    opacity: 0;
+    transition: opcity 0.5s ease-in-out;
 }
 
 #three h2{
@@ -353,8 +355,14 @@ section {
     position: relative;
     margin-bottom: 500px;
     right: 875px;
+    opacity: 0;
+    transition: opcity 0.5s ease-in-out;
 }
 
+#three.grayscale-removed h1,
+#three.grayscale-removed h2 {
+    opacity: 1;
+}
 
 #four {
     height: 98vh;
@@ -402,8 +410,6 @@ section {
     border-color: black;
     margin-bottom: 25px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-
 }
 
 #four input:focus-within {
@@ -411,7 +417,6 @@ section {
     border-color: #5bd183;
     border-width: 3px;
 }
-
 
 #four textarea:focus-within {
     outline: none;
@@ -456,9 +461,7 @@ section {
     font-size: 50px;
     font-weight: 400;
     font: bold;
-
 }
-
 
 #four a:hover {
     opacity: 0.5;
@@ -473,4 +476,3 @@ section {
     font-size: 60px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
 }
-

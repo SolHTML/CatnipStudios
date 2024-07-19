@@ -6,6 +6,21 @@
     <title>Catnip Studios</title>
     <link rel="stylesheet" href="Home.css">
     <link rel="icon" type="image/x-icon" href="wizard npc1.png">
+    <style>
+        /* Existing styles */
+
+        #three h1,
+        #three h2 {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        /* Add the visible class when grayscale is removed */
+        #three.grayscale-removed h1,
+        #three.grayscale-removed h2 {
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
     <section id="one">
@@ -16,7 +31,7 @@
                 <div class="navbar">
                     <ul>
                         <li><a href="#one">home</a></li>
-                        <li><a href="#iforgor">about us</a></li>
+                        <li><a href="#two">about us</a></li>
                         <li><a href="#three">games</a></li>
                         <li><a href="#four">contact</a></li>
                     </ul>
@@ -76,12 +91,24 @@
 
         window.addEventListener('scroll', function() {
             const header = document.querySelector('.header');
+            const three = document.querySelector('#three');
+
             const sectionOneHeight = document.querySelector('#one').offsetHeight - 500;
+            const sectionTwoHeight = document.querySelector('#two').offsetHeight + 400;
+            const sectionThreeStart = sectionOneHeight + sectionTwoHeight;
 
             if (window.scrollY > sectionOneHeight) {
                 header.classList.add('minimized');
             } else {
                 header.classList.remove('minimized');
+            }
+
+            if (window.scrollY > sectionThreeStart) {
+                three.classList.remove('grayscale');
+                three.classList.add('grayscale-removed');
+            } else {
+                three.classList.add('grayscale');
+                three.classList.remove('grayscale-removed');
             }
         });
     </script>
